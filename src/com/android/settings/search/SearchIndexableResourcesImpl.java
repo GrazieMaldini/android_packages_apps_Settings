@@ -120,6 +120,7 @@ import com.dirtyunicorns.tweaks.fragments.QuickSettings;
 import com.dirtyunicorns.tweaks.fragments.Recents;
 //import com.dirtyunicorns.tweaks.fragments.Ticker;
 import com.dirtyunicorns.tweaks.fragments.TrafficIndicators;
+import com.dirtyunicorns.tweaks.fragments.GamingMode;
 
 import java.util.Collection;
 import java.util.HashSet;
@@ -238,6 +239,7 @@ public class SearchIndexableResourcesImpl implements SearchIndexableResources {
         addIndex(Recents.class);
         //addIndex(Ticker.class);
         addIndex(TrafficIndicators.class);
+        addIndex(GamingMode.class);
     }
 
     @Override

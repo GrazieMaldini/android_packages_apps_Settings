@@ -269,7 +269,6 @@ public class SettingsGateway {
             PreviouslyConnectedDeviceDashboardFragment.class.getName(),
             DirtyTweaks.class.getName(),
             RunningServices.class.getName(),
-            Settings.GamingModeActivity.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -310,5 +309,6 @@ public class SettingsGateway {
             Settings.MyDeviceInfoActivity.class.getName(),
             Settings.DirtyTweaksActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
+            Settings.GamingModeActivity.class.getName(),
     };
 }
