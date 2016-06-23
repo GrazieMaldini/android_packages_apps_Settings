@@ -25,4 +25,12 @@
     <!-- Shortcuts -->
     <color name="icon_accent_custom">@*android:color/accent_device_default_light</color>
 
+    <!-- Defines the location of the fingerprint sensor on the device
+         0 = back
+         1 = front
+         2 = left side
+         3 = right side
+    -->
+    <integer name="config_fingerprintSensorLocation">0</integer>
+
 </resources>
