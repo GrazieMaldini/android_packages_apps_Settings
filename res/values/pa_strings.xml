@@ -212,4 +212,7 @@
     <string name="unlock_scramble_pin_layout_title">Scramble layout</string>
     <string name="unlock_scramble_pin_layout_summary">Scramble PIN layout when unlocking device</string>
 
+    <!-- Running services -->
+    <string name="background_processes_settings_title">Background processes</string>
+
 </resources>
