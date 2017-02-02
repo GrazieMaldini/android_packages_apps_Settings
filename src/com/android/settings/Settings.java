@@ -183,4 +183,5 @@ public class Settings extends SettingsActivity {
     // Aospa additions
     public static class GesturesSettingsActivity extends SettingsActivity { /* empty */ }
     public static class SystemNavActivity extends SettingsActivity { /* empty */ }
+    public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
 }
