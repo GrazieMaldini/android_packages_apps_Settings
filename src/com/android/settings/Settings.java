@@ -182,4 +182,5 @@ public class Settings extends SettingsActivity {
     public static class ZProjectActivity extends SettingsActivity { /* empty */ }
 
     public static class GamingModeActivity extends SettingsActivity {}
+    public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
 }
