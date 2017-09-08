@@ -178,4 +178,7 @@ public class Settings extends SettingsActivity {
     public static class AccountDashboardActivity extends SettingsActivity {}
     public static class SystemDashboardActivity extends SettingsActivity {}
 
+    // Z-Project Settings
+    public static class ZProjectActivity extends SettingsActivity { /* empty */ }
+
 }
