@@ -148,4 +148,7 @@
     <!-- Battery temperature -->
     <string name="battery_temp">Battery temperature</string>
 
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot sound</string>
+
 </resources>
