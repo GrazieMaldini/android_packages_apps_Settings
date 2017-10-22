@@ -115,4 +115,7 @@
     <!-- Ambient category -->
     <string name="ambient_display_category">Ambient options</string>
     <string name="custom_ambient_display_summary">Configure advanced Ambient display</string>
+
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot sound</string>
 </resources>
