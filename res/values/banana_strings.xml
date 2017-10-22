@@ -38,6 +38,9 @@
     <string name="banana_version">BananaDroid version</string>
     <string name="summary_placeholder">N/A</string>
 
-    <!-- Battery temperature -->
     <string name="battery_temp">Battery temperature</string>
+
+    <!-- Screenshot sound -->
+    <string name="screenshot_sound_title">Screenshot sound</string>
+
 </resources>
