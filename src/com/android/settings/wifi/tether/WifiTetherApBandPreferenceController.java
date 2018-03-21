@@ -186,11 +186,7 @@ public class WifiTetherApBandPreferenceController extends WifiTetherBasePreferen
     }
 
     private boolean is5GhzBandSupported() {
-        final String countryCode = mWifiManager.getCountryCode();
-        if (!mWifiManager.isDualBandSupported() || countryCode == null) {
-            return false;
-        }
-        return true;
+        return mWifiManager.isDualBandSupported();
     }
     private boolean is6GhzBandSupported() {
         final String countryCode = mWifiManager.getCountryCode();
