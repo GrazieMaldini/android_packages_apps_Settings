@@ -181,4 +181,5 @@ public class Settings extends SettingsActivity {
     public static class SMQQtiFeedbackActivity extends SettingsActivity { /* empty */ }
 
     public static class BananaSplitActivity extends SettingsActivity { /* empty */ }
+    public static class SmartPixelsActivity extends SettingsActivity { /* empty */ }
 }

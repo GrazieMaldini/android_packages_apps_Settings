@@ -149,6 +149,7 @@ import com.android.settings.wifi.savedaccesspoints.SavedAccessPointsWifiSettings
 import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.bananadroid.bananasplit.BananaSplit;
+import com.bananadroid.bananasplit.fragments.system.SmartPixels;
 
 public class SettingsGateway {
 
@@ -287,6 +288,7 @@ public class SettingsGateway {
             GlobalActionsPanelSettings.class.getName(),
             DarkModeSettingsFragment.class.getName(),
             BananaSplit.class.getName(),
+            SmartPixels.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -327,5 +329,6 @@ public class SettingsGateway {
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
             Settings.BananaSplitActivity.class.getName(),
+            Settings.SmartPixelsActivity.class.getName(),
     };
 }
