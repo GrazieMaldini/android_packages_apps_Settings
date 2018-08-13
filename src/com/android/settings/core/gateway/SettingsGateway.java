@@ -150,6 +150,7 @@ import com.android.settings.wifi.tether.WifiTetherSettings;
 
 import com.dk.settings.DKSettings;
 import com.dk.settings.fragments.system.SmartPixels;
+import com.dk.settings.fragments.system.System;
 
 public class SettingsGateway {
 
@@ -289,6 +290,7 @@ public class SettingsGateway {
             DarkModeSettingsFragment.class.getName(),
             DKSettings.class.getName(),
             SmartPixels.class.getName(),
+            System.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -328,6 +330,7 @@ public class SettingsGateway {
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
             Settings.DKSettingsActivity.class.getName(),
+            Settings.DKSettingsSystemActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
     };
 }

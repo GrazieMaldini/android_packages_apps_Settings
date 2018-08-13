@@ -179,5 +179,6 @@ public class Settings extends SettingsActivity {
     public static class SystemDashboardActivity extends SettingsActivity {}
 
     public static class DKSettingsActivity extends SettingsActivity { /* empty */ }
+    public static class DKSettingsSystemActivity extends SettingsActivity { /* empty */ }
     public static class SmartPixelsActivity extends SettingsActivity { /* empty */ }
 }
