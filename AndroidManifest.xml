@@ -3380,6 +3380,17 @@
         <!-- Hide Apps from Recents (HAFR) -->
         <activity android:name="com.bananadroid.bananasplit.fragments.privacy.hideappfromrecents.HAFRAppListActivity" />
 
+        <!-- Miscellaneous -->
+        <activity android:name=".Settings$BananaSplitSystemActivity"
+                android:label="@string/system_category">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.bananadroid.bananasplit.fragments.system.System" />
+        </activity>
+
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>
