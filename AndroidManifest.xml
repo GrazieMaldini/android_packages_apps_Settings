@@ -3377,6 +3377,9 @@
                 android:value="com.bananadroid.bananasplit.fragments.system.SmartPixels" />
         </activity>
 
+        <!-- Hide Apps from Recents (HAFR) -->
+        <activity android:name="com.bananadroid.bananasplit.fragments.privacy.hideappfromrecents.HAFRAppListActivity" />
+
         <!-- This is the longest AndroidManifest.xml ever. -->
     </application>
 </manifest>
