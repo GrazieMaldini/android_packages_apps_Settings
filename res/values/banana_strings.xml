@@ -33,4 +33,7 @@
     <!-- Manage applications, package string displayed in app snippet -->
     <string name="packagename_text"><xliff:g id="package_name">%1$s</xliff:g></string>
 
+    <!-- Banana version -->
+    <string name="banana_version">BananaDroid version</string>
+    <string name="summary_placeholder">N/A</string>
 </resources>
