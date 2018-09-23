@@ -48,4 +48,7 @@
     <!-- DU version in About phone -->
     <string name="rom_version_title">DU version</string>
 
+    <!-- Ambient category -->
+    <string name="ambient_display_category">Ambient options</string>
+
 </resources>
