@@ -18,8 +18,9 @@ LOCAL_PRIVILEGED_MODULE := true
 LOCAL_MODULE_TAGS := optional
 LOCAL_USE_AAPT2 := true
 
-LOCAL_SRC_FILES := $(call all-java-files-under, src)
-LOCAL_SRC_FILES += $(call all-java-files-under, ../DU-Tweaks/src)
+LOCAL_SRC_FILES := $(call all-java-files-under, src) \
+LOCAL_SRC_FILES += $(call all-java-files-under, ../DU-Tweaks/src) \
+		   $(call all-java-files-under, ../SmartNavSettings/src)
 
 LOCAL_STATIC_ANDROID_LIBRARIES := \
     android-slices-builders \
@@ -54,7 +55,10 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res \
     frameworks/support/v7/appcompat/res \
     frameworks/support/v7/recyclerview/res \
     frameworks/support/design/res \
-    packages/apps/DU-Tweaks/res
+    packages/apps/DU-Tweaks/res \
+    packages/apps/SmartNavSettings/res
+
+LOCAL_FULL_LIBS_MANIFEST_FILES := $(LOCAL_PATH)/AndroidManifest-SmartNav.xml
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
