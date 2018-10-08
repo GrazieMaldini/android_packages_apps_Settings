@@ -75,7 +75,7 @@ public class SwipeUpPreferenceController extends BasePreferenceController
                 context.getContentResolver(), Settings.System.NAVIGATION_BAR_ENABLED,
                 defaultToNavigationBar ? 1 : 0, UserHandle.USER_CURRENT) != 0;
 
-        if (!navigationBarEnabled) {
+        if (!navigationBarEnabled) || !isPieRecentsEnabled(context)) {
             return false;
         }
 
@@ -88,6 +88,11 @@ public class SwipeUpPreferenceController extends BasePreferenceController
             return false;
         }
         return true;
+    }
+
+    static boolean isPieRecentsEnabled(Context mContext) {
+       return Settings.System.getInt(mContext.getContentResolver(),
+                      Settings.System.RECENTS_COMPONENT, 0) == 0;
     }
 
     @Override
