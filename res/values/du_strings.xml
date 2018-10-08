@@ -171,4 +171,8 @@
     <string name="aggressive_standby_summary">Restrict apps from running the background</string>
     <string name="aggressive_battery_saver_title">Auto-enable on battery saver </string> 
     <string name="aggressive_battery_saver_summary">Enable Aggressive Battery automatically when using battery saver</string>
+
+    <!-- Toolbar -->
+    <string name="settings_head_title">Dirty Unicorns</string>
+
 </resources>
