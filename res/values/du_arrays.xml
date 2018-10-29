@@ -13,7 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <string-array name="system_theme_style_entries" translatable="false">
         <item>@string/system_theme_style_auto</item>
@@ -30,6 +30,19 @@
         <item>2</item>
         <item>3</item>
         <item>4</item>
+    </string-array>
+
+    <!-- Flashlight gestures -->
+    <string-array name="double_tap_power_flashlight_entries" translatable="false">
+        <item>@string/torch_power_button_gesture_none</item>
+        <item>@string/torch_power_button_gesture_dt</item>
+        <item>@string/torch_power_button_gesture_lp</item>
+    </string-array>
+
+    <string-array name="double_tap_power_flashlight_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
     </string-array>
 
 </resources>
