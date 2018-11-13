@@ -168,7 +168,12 @@
             android:key="qs_tile_style"
             android:title="@string/qs_tile_style_title" />
 
-     </PreferenceCategory>
+	    <com.android.settings.display.FontDialogPreference
+            android:key="custom_font"
+            android:title="@string/font_picker_title"
+            android:persistent="false" /> 
+
+    </PreferenceCategory>
 
     <PreferenceCategory
         android:key="density_category"
