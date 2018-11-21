@@ -37,7 +37,7 @@ public class ThemeCategoryController extends AbstractPreferenceController
 
     @Override
     public boolean isAvailable() {
-        return !Utils.isPackageInstalled(mContext, SUBS_PACKAGE);
+        return true;
     }
 
     @Override
