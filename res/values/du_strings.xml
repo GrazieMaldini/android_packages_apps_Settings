@@ -148,4 +148,13 @@
     <string name="battery_estimates_title">Battery Estimates in QS</string>
     <string name="battery_estimates_summary">Show the estimated battery life in QS panel</string>
 
+    <!-- Switch styles -->
+    <string name="switch_style_title">Switch appearance</string>
+    <string name="switch_default">Default</string>
+    <string name="switch_md2">Material Design 2</string>
+    <string name="switch_oneplus">OnePlus</string>
+
+    <!-- Interfaces Settings-->
+    <string name="intefaces_settings">Interfaces</string>
+
 </resources>

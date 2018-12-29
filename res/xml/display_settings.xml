@@ -168,11 +168,6 @@
             android:key="qs_tile_style"
             android:title="@string/qs_tile_style_title" />
 
-	    <com.android.settings.display.FontDialogPreference
-            android:key="custom_font"
-            android:title="@string/font_picker_title"
-            android:persistent="false" /> 
-
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -198,4 +193,21 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory
+        android:key="interfaces_settings"
+        android:title="@string/interfaces_settings"> 
+
+    <com.android.settings.display.FontDialogPreference
+	android:key="custom_font"
+	android:title="@string/font_picker_title"
+	android:persistent="false" /> 
+
+    <ListPreference
+	android:key="switch_style"
+	android:title="@string/switch_style_title"
+	android:persistent="false"
+	android:entries="@array/switch_style_entries"
+	android:entryValues="@array/switch_style_values" />
+
+    </PreferenceCategory>
 </PreferenceScreen>
