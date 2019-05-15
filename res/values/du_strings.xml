@@ -392,3 +392,7 @@
     <string name="app_ops_labels_write_mms">Write an MMS message</string>
     <string name="app_ops_labels_write_sms">Write SMS</string>
 </resources>
+
+    <!-- Battery estimates -->
+    <string name="battery_estimates_title">Battery Estimates in QS</string>
+    <string name="battery_estimates_summary">Show the estimated battery life in QS panel</string>
