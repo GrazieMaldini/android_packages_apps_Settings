@@ -55,7 +55,7 @@
         android:summary="@string/battery_percentage_description" />
 
 
-    <com.havoc.support.preferences.SystemSettingSwitchPreference
+    <SwitchPreference
         android:key="show_battery_estimate"
         android:title="@string/battery_estimates_title"
         android:summary="@string/battery_estimates_summary"
