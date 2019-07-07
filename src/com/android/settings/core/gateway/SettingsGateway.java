@@ -26,6 +26,7 @@ import com.android.settings.Settings;
 import com.android.settings.TestingSettings;
 import com.android.settings.TetherSettings;
 import com.android.settings.TrustedCredentialsSettings;
+import com.android.settings.Settings.GamingModeActivity;
 import com.android.settings.accessibility.AccessibilitySettings;
 import com.android.settings.accessibility.AccessibilitySettingsForSetupWizard;
 import com.android.settings.accessibility.CaptionPropertiesFragment;
@@ -268,6 +269,7 @@ public class SettingsGateway {
             PreviouslyConnectedDeviceDashboardFragment.class.getName(),
             DirtyTweaks.class.getName(),
             RunningServices.class.getName(),
+            Settings.GamingModeActivity.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
