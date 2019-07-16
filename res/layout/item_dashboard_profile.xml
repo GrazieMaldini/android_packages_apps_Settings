@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="38dp"
-    android:layout_height="38dp"
+    android:layout_width="32dp"
+    android:layout_height="32dp"
     android:background="@drawable/bg_dashboard_profile">
 
     <ImageView
         android:id="@+id/user_icon"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
         android:layout_gravity="center" 
         android:adjustViewBounds="true"
         android:scaleType="fitCenter"/>
