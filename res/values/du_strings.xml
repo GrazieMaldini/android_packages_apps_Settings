@@ -158,7 +158,7 @@
     <string name="switch_tg">Telegram</string>
 
     <!-- Interfaces Settings-->
-    <string name="intefaces_settings">Interfaces</string>
+    <string name="interfaces_settings">Interfaces</string>
 
     <!-- Settings dashboard icon style -->
     <string name="theming_settings_dashboard_icons_title">Settings dashboard icons</string>
