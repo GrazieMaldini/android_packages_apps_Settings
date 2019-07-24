@@ -38,6 +38,7 @@ import com.android.settings.display.LiftToWakePreferenceController;
 import com.android.settings.display.NightDisplayPreferenceController;
 import com.android.settings.display.NightModePreferenceController;
 import com.android.settings.display.QsTileStylesPreferenceController;
+import com.android.settings.display.QsHeaderStylePreferenceController;
 import com.android.settings.display.ScreenSaverPreferenceController;
 import com.android.settings.display.ShowOperatorNamePreferenceController;
 import com.android.settings.display.SwitchStylerPreferenceController;
@@ -146,6 +147,7 @@ public class DisplaySettings extends DashboardFragment {
         controllers.add(new TimeoutPreferenceController(context, KEY_SCREEN_TIMEOUT));
         controllers.add(new VrDisplayPreferenceController(context));
         controllers.add(new SwitchStylerPreferenceController(context));
+        controllers.add(new QsHeaderStylePreferenceController(context));
         controllers.add(new ShowOperatorNamePreferenceController(context));
         controllers.add(new WallpaperPreferenceController(context));
         controllers.add(new ThemeCategoryController(context));
