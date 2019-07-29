@@ -41,9 +41,6 @@
     <!-- Density category -->
     <string name="density_category">Density options</string>
 
-    <!-- DU version in About phone -->
-    <string name="rom_version_title">DU version</string>
-
     <!-- System theme -->
     <string name="system_theme_wallpaper">Automatic (based on time of day)</string>
     <string name="system_theme_light">Light</string>
@@ -188,5 +185,14 @@
 
     <!-- Volume link notification -->
     <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
+
+    <!-- du-OS info -->
+    <string name="du_title">Dirty Unicorns</string>
+    <string name="du_info">DU Version</string>
+    <string name="du_maintainer">Maintainer</string>
+    <string name="du_date">Build date</string>
+    <string name="du_type">Build type</string>
+    <string name="du_device">Device</string>
+    <string name="du_version">Version</string>
 
 </resources>
