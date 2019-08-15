@@ -189,6 +189,6 @@
         android:order="99"
         android:title="@string/selinux_status"
         android:summary="@string/selinux_status_enforcing"
-        android:selectable="false"/>
+      settings:controller="com.android.settings.deviceinfo.firmwareversion.SELinuxStatusPreferenceController" />
 
 </PreferenceScreen>
