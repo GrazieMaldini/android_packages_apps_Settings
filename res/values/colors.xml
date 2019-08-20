@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <color name="black">#000</color>
     <color name="red">#F00</color>
     <color name="blue">#00F</color>
@@ -137,6 +137,8 @@
     <color name="battery_good_color_dark">#4caf50</color> <!-- Material Green 500 -->
     <color name="battery_maybe_color_dark">#fdd835</color> <!-- Material Yellow 600 -->
     <color name="battery_bad_color_dark">#f44336</color> <!-- Material Red 500 -->
+
+    <color name="disabled_text_color">#66000000</color>
 
 </resources>
 
