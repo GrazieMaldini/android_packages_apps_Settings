@@ -36,7 +36,7 @@ import com.android.settingslib.core.lifecycle.Lifecycle;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.havoc.support.preferences.CustomSeekBarPreference;
+import com.android.settings.preference.CustomSeekBarPreference;
 
 /**
  * Settings screen for Smart charging
@@ -89,7 +89,7 @@ public class SmartChargingSettings extends DashboardFragment implements OnPrefer
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.HAVOC_SETTINGS;
+        return MetricsProto.MetricsEvent.LIQUID;
     }
 
     @Override
