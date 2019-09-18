@@ -62,7 +62,7 @@ public class StorageVolumePreference extends Preference {
         mVolume = volume;
         mColor = color;
 
-        mIconColor = Utils.getColorAttr(context, android.R.attr.colorControlNormal);
+        mIconColor = Utils.getColorAttrDefaultColor(context, android.R.attr.colorControlNormal);
 
         setLayoutResource(R.layout.storage_volume);
 
