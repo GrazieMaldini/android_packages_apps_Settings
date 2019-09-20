@@ -70,12 +70,12 @@ public class SwipeUpPreferenceController extends BasePreferenceController
 
     static boolean isGestureAvailable(Context context) {
         final boolean defaultToNavigationBar = context.getResources().getBoolean(
-                com.android.internal.R.bool.config_defaultToNavigationBar);
+                com.android.internal.R.bool.config_defaultToNavigationBar) && isPieRecentsEnabled(context);;
         final boolean navigationBarEnabled = Settings.System.getIntForUser(
                 context.getContentResolver(), Settings.System.NAVIGATION_BAR_ENABLED,
                 defaultToNavigationBar ? 1 : 0, UserHandle.USER_CURRENT) != 0;
-
-        if (!navigationBarEnabled) || !isPieRecentsEnabled(context)) {
+				
+        if (!navigationBarEnabled) {
             return false;
         }
 
