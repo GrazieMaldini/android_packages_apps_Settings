@@ -26,7 +26,8 @@
         android:summary="@string/panicroom_summary"
         android:icon="@drawable/ic_settings_panicroom"
         android:order="-130"
-        android:fragment="com.hyperparanoid.panicroom.PanicRoom"/>
+        android:fragment="com.hyperparanoid.panicroom.PanicRoom"
+        settings:controller="com.hyperparanoid.panicroom.TopLevelEntryPreferenceController" />
 
     <Preference
         android:key="top_level_network"
