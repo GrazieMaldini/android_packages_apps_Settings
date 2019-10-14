@@ -21,6 +21,14 @@
     android:key="top_level_settings">
 
     <Preference
+        android:key="top_level_panicroom_settings"
+        android:title="@string/panicroom_title"
+        android:summary="@string/panicroom_summary"
+        android:icon="@drawable/ic_settings_panicroom"
+        android:order="-130"
+        android:fragment="com.hyperparanoid.panicroom.PanicRoom"/>
+
+    <Preference
         android:key="top_level_network"
         android:title="@string/network_dashboard_title"
         android:summary="@string/summary_placeholder"

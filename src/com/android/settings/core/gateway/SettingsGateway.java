@@ -150,6 +150,8 @@ import com.android.settings.wifi.savedaccesspoints.SavedAccessPointsWifiSettings
 import com.android.settings.wifi.tether.WifiTetherSettings;
 import com.android.settings.GesturesSettings;
 
+import com.hyperparanoid.panicroom.PanicRoom;
+
 public class SettingsGateway {
 
     /**
@@ -288,6 +290,7 @@ public class SettingsGateway {
             GesturesSettings.class.getName(),
             DarkModeSettingsFragment.class.getName(),
             RunningServices.class.getName(),
+            PanicRoom.class.getName(),
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -329,5 +332,6 @@ public class SettingsGateway {
             UserBackupSettingsActivity.class.getName(),
             Settings.SystemNavActivity.class.getName(),
             Settings.DevRunningServicesActivity.class.getName(),
+            Settings.PanicRoomActivity.class.getName(),
     };
 }

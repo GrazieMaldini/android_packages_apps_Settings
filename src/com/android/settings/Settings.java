@@ -184,4 +184,6 @@ public class Settings extends SettingsActivity {
     public static class GesturesSettingsActivity extends SettingsActivity { /* empty */ }
     public static class SystemNavActivity extends SettingsActivity { /* empty */ }
     public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
+
+    public static class PanicRoomActivity extends SettingsActivity { /* empty */ }
 }
