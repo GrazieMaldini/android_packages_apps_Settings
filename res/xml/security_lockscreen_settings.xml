@@ -49,8 +49,8 @@
     </PreferenceCategory>
 
     <PreferenceCategory
-        android:key="ambient_display_category_when_to_show"
-        android:title="@string/ambient_display_category_triggers"
+        android:key="ambient_display_category"
+        android:title="@string/ambient_display_category"
         android:order="1000">
 
         <SwitchPreference
@@ -83,6 +83,9 @@
             android:summary="@string/doze_summary"
             settings:controller="com.android.settings.display.AmbientDisplayNotificationsPreferenceController" />
 
+        <Preference
+            android:key="ambient_display_custom"
+            android:title="@string/ambient_display_screen_title" />
     </PreferenceCategory>
 
     <!-- Work profile settings are at the bottom with high order value to avoid users thinking that
