@@ -15,6 +15,9 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
+    <!-- Hyper Paranoid -->
+    <string name="header_title" translatable="false">Hyper Paranoid</string>
+
     <!-- Paranoid Android version -->
     <string name="pa_version">Hyper Paranoid version</string>
 
