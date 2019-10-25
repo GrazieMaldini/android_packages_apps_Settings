@@ -32,5 +32,7 @@
     <color name="BottomBarBackgroundColor">@android:color/black</color>
     <color name="bottom_nav_text_icon_active">@android:color/white</color>
     <color name="bottom_nav_text_icon_inactive">@*android:color/hint_foreground_light</color>
+
+    <color name="face_intro_outline">?android:attr/colorAccent</color>
 </resources>
 
