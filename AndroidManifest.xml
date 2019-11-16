@@ -49,6 +49,7 @@
     <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES"/>
     <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
     <uses-permission android:name="android.permission.BATTERY_STATS"/>
+    <uses-permission android:name="android.permission.RESET_BATTERY_STATS"/>
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
     <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.MOVE_PACKAGE" />
@@ -3318,6 +3319,17 @@
                 android:resource="@string/zproject_settings_dashboard_summary"/>
         </activity>
 
-        <!-- This is the longest AndroidManifest.xml ever. -->
+        <!-- Gaming mode -->
+        <activity android:name=".Settings$GamingModeActivity"
+            android:label="@string/gaming_mode_title"
+            android:taskAffinity="com.android.settings"
+            android:parentActivityName="Settings">
+            <intent-filter android:priority="1">
+                <action android:name="android.settings.GAMING_MODE_SETTINGS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
+                android:value="com.zproject.settings.fragments.GamingMode" />
+        </activity>
     </application>
 </manifest>

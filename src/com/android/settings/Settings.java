@@ -181,4 +181,5 @@ public class Settings extends SettingsActivity {
     // Z-Project Settings
     public static class ZProjectActivity extends SettingsActivity { /* empty */ }
 
+    public static class GamingModeActivity extends SettingsActivity {}
 }
