@@ -333,5 +333,6 @@ public class SettingsGateway {
             Settings.BananaSplitActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
             Settings.BananaSplitSystemActivity.class.getName(),
+            Settings.SystemNavActivity.class.getName(),
     };
 }
