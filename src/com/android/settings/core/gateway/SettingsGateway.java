@@ -332,5 +332,6 @@ public class SettingsGateway {
             Settings.DKSettingsActivity.class.getName(),
             Settings.DKSettingsSystemActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
+            Settings.SystemNavActivity.class.getName(),
     };
 }
