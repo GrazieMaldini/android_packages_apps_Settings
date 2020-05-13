@@ -89,10 +89,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private static final String KEY_VOLUME_KEY_CURSOR_CONTROL = "volume_key_cursor_control";
     private static final String KEY_SWAP_VOLUME_BUTTONS = "swap_volume_buttons";
     private static final String KEY_VOLUME_MUSIC_CONTROLS = "volbtn_music_controls";
-    private static final String KEY_NAVIGATION_HOME_LONG_PRESS = "navigation_home_long_press";
-    private static final String KEY_NAVIGATION_HOME_DOUBLE_TAP = "navigation_home_double_tap";
-    private static final String KEY_NAVIGATION_APP_SWITCH_LONG_PRESS =
-            "navigation_app_switch_long_press";
 
     private static final String CATEGORY_HOME = "home_key";
     private static final String CATEGORY_BACK = "back_key";
@@ -118,9 +114,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
     private SwitchPreference mCameraSleepOnRelease;
     private SwitchPreference mCameraLaunch;
     private SwitchPreference mDisableNavigationKeys;
-    private ListPreference mNavigationHomeLongPressAction;
-    private ListPreference mNavigationHomeDoubleTapAction;
-    private ListPreference mNavigationAppSwitchLongPressAction;
     private SwitchPreference mNavigationMenuArrowKeys;
     private SwitchPreference mNavigationInverse;
     private Preference mNavigationGestures;
@@ -223,33 +216,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         Action appSwitchLongPressAction = Action.fromSettings(resolver,
                 Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION,
                 defaultAppSwitchLongPressAction);
-
-        // Navigation bar home long press
-        Action defaultHomeLongPressActionNavbar = Action.fromIntSafe(res.getInteger(
-                com.android.internal.R.integer.config_longPressOnHomeBehavior));
-        Action homeLongPressActionNavbar = Action.fromSettings(resolver,
-                Settings.System.KEY_HOME_LONG_PRESS_ACTION_NAVBAR,
-                defaultHomeLongPressActionNavbar);
-        mNavigationHomeLongPressAction = initList(KEY_NAVIGATION_HOME_LONG_PRESS,
-                homeLongPressActionNavbar);
-
-        // Navigation bar home double tap
-        Action defaultHomeDoubleTapActionNavbar = Action.fromIntSafe(res.getInteger(
-                com.android.internal.R.integer.config_doubleTapOnHomeBehavior));
-        Action homeDoubleTapActionNavbar = Action.fromSettings(resolver,
-                Settings.System.KEY_HOME_DOUBLE_TAP_ACTION_NAVBAR,
-                defaultHomeDoubleTapActionNavbar);
-        mNavigationHomeDoubleTapAction = initList(KEY_NAVIGATION_HOME_DOUBLE_TAP,
-                homeDoubleTapActionNavbar);
-
-        // Navigation bar app switch long press
-        Action defaultAppSwitchLongPressActionNavbar = Action.fromIntSafe(res.getInteger(
-                com.android.internal.R.integer.config_longPressOnAppSwitchBehavior));
-        Action appSwitchLongPressActionNavbar = Action.fromSettings(resolver,
-                Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION_NAVBAR,
-                defaultAppSwitchLongPressActionNavbar);
-        mNavigationAppSwitchLongPressAction = initList(KEY_NAVIGATION_APP_SWITCH_LONG_PRESS,
-                appSwitchLongPressActionNavbar);
 
         // Only visible on devices that does not have a navigation bar already
         if (NavbarUtils.canDisable(getActivity())) {
@@ -414,15 +380,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
                 mAppSwitchLongPressAction.setEntries(actionEntriesGo);
                 mAppSwitchLongPressAction.setEntryValues(actionValuesGo);
             }
-
-            mNavigationHomeLongPressAction.setEntries(actionEntriesGo);
-            mNavigationHomeLongPressAction.setEntryValues(actionValuesGo);
-
-            mNavigationHomeDoubleTapAction.setEntries(actionEntriesGo);
-            mNavigationHomeDoubleTapAction.setEntryValues(actionValuesGo);
-
-            mNavigationAppSwitchLongPressAction.setEntries(actionEntriesGo);
-            mNavigationAppSwitchLongPressAction.setEntryValues(actionValuesGo);
         }
         mAdditionalButtonsAvailable = !getResources().getString(R.string.config_customButtonsPackage).equals("");
         if (mAdditionalButtonsAvailable){
@@ -607,17 +564,9 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
             handleListChange((ListPreference) preference, newValue,
                     Settings.System.KEY_HOME_LONG_PRESS_ACTION);
             return true;
-        }else if (preference == mNavigationHomeLongPressAction) {
-            handleListChange((ListPreference) preference, newValue,
-                    Settings.System.KEY_HOME_LONG_PRESS_ACTION_NAVBAR);
-            return true;
         } else if (preference == mHomeDoubleTapAction) {
             handleListChange((ListPreference) preference, newValue,
                     Settings.System.KEY_HOME_DOUBLE_TAP_ACTION);
-            return true;
-        } else if (preference == mNavigationHomeDoubleTapAction) {
-            handleListChange((ListPreference) preference, newValue,
-                    Settings.System.KEY_HOME_DOUBLE_TAP_ACTION_NAVBAR);
             return true;
         } else if (preference == mMenuPressAction) {
             handleListChange(mMenuPressAction, newValue,
@@ -642,10 +591,6 @@ public class ButtonSettings extends SettingsPreferenceFragment implements
         } else if (preference == mAppSwitchLongPressAction) {
             handleListChange((ListPreference) preference, newValue,
                     Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION);
-            return true;
-        } else if (preference == mNavigationAppSwitchLongPressAction) {
-            handleListChange((ListPreference) preference, newValue,
-                    Settings.System.KEY_APP_SWITCH_LONG_PRESS_ACTION_NAVBAR);
             return true;
         } else if (preference == mNavigationInverse) {
             mNavigationInverse.setEnabled(false);
