@@ -194,6 +194,7 @@
 
     <!-- Status bar -->
     <string name="status_bar_title">Status bar</string>
+    <string name="status_bar_general_title">General</string>
     <string name="status_bar_quick_qs_pulldown_title">Quick pulldown</string>
     <string name="status_bar_quick_qs_pulldown_summary">%1$s edge of the status bar pulls down Quick Settings</string>
     <string name="status_bar_quick_qs_pulldown_summary_left">Left</string>
@@ -302,7 +303,7 @@
 	
 	<!-- Heads up -->
     <string name="heads_up_cat_title">Heads up</string>
-    <string name="heads_up_cat_summary">Snooze, timeout blacklist etc</string>
+    <string name="heads_up_cat_summary">Heads up time out and snooze timer</string>
     <string name="heads_up_time_out_title">Time out</string>
     <string name="heads_up_time_out_summary">Peeking notifications will show for <xliff:g id="number">%d</xliff:g> seconds</string>
     <string name="heads_up_time_out_2sec">2 seconds</string>
