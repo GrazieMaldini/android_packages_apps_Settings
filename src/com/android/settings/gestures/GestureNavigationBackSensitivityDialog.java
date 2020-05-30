@@ -36,9 +36,7 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
     private static final String TAG = "GestureNavigationBackSensitivityDialog";
     private static final String KEY_BACK_SENSITIVITY = "back_sensitivity";
 
-    private static final String KEY_HOME_HANDLE_SIZE = "home_handle_width";
-
-    public static void show(SystemNavigationGestureSettings parent, int sensitivity, int length) {
+    public static void show(SystemNavigationGestureSettings parent, int sensitivity) {
         if (!parent.isAdded()) {
             return;
         }
@@ -47,7 +45,6 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
                 new GestureNavigationBackSensitivityDialog();
         final Bundle bundle = new Bundle();
         bundle.putInt(KEY_BACK_SENSITIVITY, sensitivity);
-        bundle.putInt(KEY_HOME_HANDLE_SIZE, length);
         dialog.setArguments(bundle);
         dialog.setTargetFragment(parent, 0);
         dialog.show(parent.getFragmentManager(), TAG);
@@ -61,23 +58,18 @@ public class GestureNavigationBackSensitivityDialog extends InstrumentedDialogFr
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         final View view = getActivity().getLayoutInflater().inflate(
-                R.layout.dialog_back_gesture_options, null);
-        final SeekBar seekBarSensitivity = view.findViewById(R.id.back_sensitivity_seekbar);
-        seekBarSensitivity.setProgress(getArguments().getInt(KEY_BACK_SENSITIVITY));
-        final SeekBar seekBarHandleSize = view.findViewById(R.id.home_handle_seekbar);
-        seekBarHandleSize.setProgress(getArguments().getInt(KEY_HOME_HANDLE_SIZE));
+                R.layout.dialog_back_gesture_sensitivity, null);
+        final SeekBar seekBar = view.findViewById(R.id.back_sensitivity_seekbar);
+        seekBar.setProgress(getArguments().getInt(KEY_BACK_SENSITIVITY));
         return new AlertDialog.Builder(getContext())
-                .setTitle(R.string.back_options_dialog_title)
+                .setTitle(R.string.back_sensitivity_dialog_title)
                 .setMessage(R.string.back_sensitivity_dialog_message)
                 .setView(view)
                 .setPositiveButton(R.string.okay, (dialog, which) -> {
-                    int sensitivity = seekBarSensitivity.getProgress();
+                    int sensitivity = seekBar.getProgress();
                     getArguments().putInt(KEY_BACK_SENSITIVITY, sensitivity);
-                    int length = seekBarHandleSize.getProgress();
-                    getArguments().putInt(KEY_HOME_HANDLE_SIZE, length);
                     SystemNavigationGestureSettings.setBackSensitivity(getActivity(),
                             getOverlayManager(), sensitivity);
-                    SystemNavigationGestureSettings.setHomeHandleSize(getActivity(), length);
                 })
                 .create();
     }
