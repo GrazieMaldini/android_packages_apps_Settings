@@ -84,10 +84,6 @@
     <string name="data_usage_app_restrict_wifi">Wi\u2011Fi data</string>
     <string name="data_usage_app_restrict_wifi_summary">Enable usage of Wi\u2011Fi data</string>
 
-    <!-- Navbar options -->
-    <string name="navbar_invert_layout_title">Invert Navigation Bar layout</string>
-    <string name="navbar_invert_info">This will swap the \"Back\" and \"Recents\" buttons on the navigation bar</string>
-
     <!-- In-call feedback -->
     <string name="incall_feeedback_vibrate_title">In-Call Haptics</string>
     <string name="incall_feeedback_summary">Vibrate to indicate call status</string>
