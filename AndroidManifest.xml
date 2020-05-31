@@ -3411,6 +3411,7 @@
             </intent-filter>
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
                 android:value="com.android.settings.gestures.SystemNavigationGestureSettings" />
+        </activity>
 
         <!-- Panic Room -->
         <activity android:name=".Settings$PanicRoomActivity"

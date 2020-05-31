@@ -16,7 +16,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- Paranoid Android version -->
-    <string name="pa_version">Paranoid Android version</string>
+    <string name="pa_version">Hyper Paranoid version</string>
 
     <string name="reset_all_settings">RESET ALL</string>
     <string name="reset_selected_settings">RESET SELECTED</string>
