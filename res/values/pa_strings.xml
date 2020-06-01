@@ -26,7 +26,7 @@
 
     <!-- Panic Room -->
     <string name="panicroom">Panic Room</string>
-    <string name="panicroom_summary">Let yourself to be panic</strings>
+    <string name="panicroom_summary">Let yourself to be panic</string>
 
     <!-- Gestures Settings -->
     <string name="quick_gestures_title">Quick gestures</string>

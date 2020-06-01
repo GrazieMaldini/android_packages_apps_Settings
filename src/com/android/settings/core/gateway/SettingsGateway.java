@@ -290,7 +290,7 @@ public class SettingsGateway {
             GesturesSettings.class.getName(),
             DarkModeSettingsFragment.class.getName(),
             RunningServices.class.getName(),
-            PanicRoom.class.getName(),
+            PanicRoom.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {

@@ -47,6 +47,5 @@ public class ParanoidAndroidVersionPreferenceController extends BasePreferenceCo
               mContext.getResources().getString(R.string.device_info_default));
 
         return paBuildVariant + " " + paVersionCode;
-        }
     }
 }

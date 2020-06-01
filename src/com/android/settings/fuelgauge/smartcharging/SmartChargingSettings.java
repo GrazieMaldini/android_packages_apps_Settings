@@ -29,14 +29,13 @@ import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
+import com.android.settings.pa.CustomSeekBarPreference;
 import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import com.support.preferences.CustomSeekBarPreference;
 
 /**
  * Settings screen for Smart charging
@@ -89,7 +88,7 @@ public class SmartChargingSettings extends DashboardFragment implements OnPrefer
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.ZPROJECT_SETTINGS;
+        return MetricsProto.MetricsEvent.FEATURE_PREFERENCES;
     }
 
     @Override
