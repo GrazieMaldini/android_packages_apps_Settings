@@ -42,9 +42,7 @@ public class AppNotificationSettings extends NotificationSettingsBase {
     private static String KEY_BADGE = "badge";
     private static String KEY_APP_LINK = "app_link";
     private static String KEY_BUBBLE = "bubble_link_pref";
-    private static String KEY_SOUND_TIMEOUT = "sound_timeout";
-    private static String[] LEGACY_NON_ADVANCED_KEYS =
-            {KEY_BADGE, KEY_APP_LINK, KEY_BUBBLE, KEY_SOUND_TIMEOUT};
+    private static String[] LEGACY_NON_ADVANCED_KEYS = {KEY_BADGE, KEY_APP_LINK, KEY_BUBBLE};
 
     @Override
     public int getMetricsCategory() {
@@ -104,7 +102,6 @@ public class AppNotificationSettings extends NotificationSettingsBase {
         mControllers.add(new HeaderPreferenceController(context, this));
         mControllers.add(new BlockPreferenceController(context, mImportanceListener, mBackend));
         mControllers.add(new BadgePreferenceController(context, mBackend));
-        mControllers.add(new SoundTimeoutPreferenceController(context, mBackend));
         mControllers.add(new AllowSoundPreferenceController(
                 context, mImportanceListener, mBackend));
         mControllers.add(new ImportancePreferenceController(
