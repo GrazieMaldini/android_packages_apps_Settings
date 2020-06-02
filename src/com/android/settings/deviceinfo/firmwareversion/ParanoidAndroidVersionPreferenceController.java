@@ -24,7 +24,6 @@ import com.android.settings.core.BasePreferenceController;
 
 public class ParanoidAndroidVersionPreferenceController extends BasePreferenceController {
 
-    private static final String PA_VERSION_FLAVOR_PROP = "ro.pa.version.flavor";
     private static final String PA_VERSION_CODE_PROP = "ro.pa.version.code";
     private static final String PA_BUILD_VARIANT_PROP = "ro.pa.build.variant";
 
@@ -42,19 +41,10 @@ public class ParanoidAndroidVersionPreferenceController extends BasePreferenceCo
 
     @Override
     public CharSequence getSummary() {
-        String paVersionFlavor = SystemProperties.get(PA_VERSION_FLAVOR_PROP,
-                mContext.getResources().getString(R.string.device_info_default));
         String paVersionCode = SystemProperties.get(PA_VERSION_CODE_PROP,
                mContext.getResources().getString(R.string.device_info_default));
         String paBuildVariant = SystemProperties.get(PA_BUILD_VARIANT_PROP,
               mContext.getResources().getString(R.string.device_info_default));
-
-        if (paBuildVariant.equals("Release")) {
-           return paVersionFlavor + " " + paVersionCode;
-        } else if ((paBuildVariant.equals("Alpha")) || (paBuildVariant.equals("Beta"))) {
-           return paVersionFlavor + " " + paBuildVariant + " " + paVersionCode;
-        } else {
-           return paVersionFlavor + " " + paVersionCode + " " + paBuildVariant;
-        }
+        return paBuildVariant + " " + paVersionCode;
     }
 }
